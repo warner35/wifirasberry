@@ -5,7 +5,7 @@ Clone and setup the ansible script.
 
 ```
 git clone https://github.com/warner35/rasberrywifi.git
-cd ansible-pi
+cd rasberrywifi
 cp hosts.example hosts
 cp interfaces.example interfaces
 ```
