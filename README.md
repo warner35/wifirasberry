@@ -1,21 +1,22 @@
 
 ## Installation
 
-Clone and setup the ansible script. 
+Clona el repositorio
 
 ```
 git clone https://github.com/warner35/rasberrywifi.git
 cd rasberrywifi
 cp hosts.example hosts
-cp interfaces.example interfaces
+otorga permisos de escritura
+
 ```
 
-Edit the `interfaces` and `hosts` files.
+Edita la `interfaces` y el archivo `hosts`.
 
 Deploy using [ansible](http://www.ansible.com) (install instructions for ansible are in [requirements](#requirements) below).
 
 ```
-ansible-playbook playbook.yml -i hosts --ask-pass --become -c paramiko
+ansible-playbook playbook.yml -i hosts 
 ```
 
 ## Requirements
