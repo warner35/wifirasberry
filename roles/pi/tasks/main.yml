@@ -5,10 +5,6 @@
 - name: 'Configure WIFI'
   copy: src=./interfaces dest=/etc/network/interfaces mode=0600
 
-- name: 'Update APT package cache'
-  action: apt update_cache=yes
-
-
 - name: 'Reboot'
   shell: sleep 2 && reboot
   async: 1
